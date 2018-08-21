@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<h1>Калькулятор</h1>
+<table>
+    <thead>
+    <tr>
+        <td colspan="4"></td>
+            <input type="text" id="num-iput" title="Поле для ввода"
+        </td>
+   </tr>
+</thead>
+<tbody>
+<tr>
+    <td><button class="nam baton">1</button> </td>
+    <td><button class="nam baton">2</button> </td>
+    <td><button class="nam baton">3</button> </td>
+    <td><button class="nam baton">+</button> </td>
+
+</tr>
+</tbody>
+<table>
+<tr>
+    <td><button class="nam baton">4</button> </td>
+    <td><button class="nam baton">5</button> </td>
+    <td><button class="nam baton">6</button> </td>
+    <td><button class="nam baton">-</button> </td>
+</tr>
+    <tr>
+
+        <td><button class="nam baton">7</button> </td>
+        <td><button class="nam baton">8</button> </td>
+        <td><button class="nam baton">9</button> </td>
+        <td><button class="nam baton">*</button> </td>
+    </tr>
+    <tr>
+
+        <td><button class="nam baton"><</button> </td>
+        <td><button class="nam baton">0</button> </td>
+        <td><button class="nam baton">.</button> </td>
+        <td><button class="nam baton">/</button> </td>
+    </tr>
+</table>
+</body>
+</html>

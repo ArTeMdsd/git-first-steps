@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+ th {
+     background-color: #4CAF50;
+     color: white;
+ }
+ table  {
+     border-collapse: collapse;
+ }
+
+
+ tr:nth-child(even) {
+     background-color: darkgoldenrod;
+ }
+ tfoot td {
+     border-top: 1px solid gold;
+ }
+tfoot {
+    background-color: lightgoldenrodyellow;
+}
+button{
+    width: 25px;
+    height: 25px;
+}
+td, tx {
+    padding: 5px;
+}
+.money {
+    text-align: right;
+}
+td, th{
+    padding: 15px;
+}
+input {
+    text-align: right;
+    width: 40%;
+}
