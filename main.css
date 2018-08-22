@@ -14,7 +14,7 @@ h1 {
      background-color: darkgoldenrod;
  }
  tfoot td {
-     border-top: 1px solid gold;
+     border-top: 1px solid ghostwhite;
  }
 tfoot {
     background-color: lightgoldenrodyellow;
@@ -34,5 +34,5 @@ td, th{
 }
 input {
     text-align: right;
-    width: 40%;
+    width: 14%;
 }
