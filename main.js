@@ -59,3 +59,4 @@ dotButton.onclick = () => {enterNamber('+')}
 // DOM - Document Object Model
 // BOM - Browser Object Model
 const dotbaton = document.getElementById('nam-baton');
+d
