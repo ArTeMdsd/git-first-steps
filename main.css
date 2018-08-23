@@ -2,7 +2,7 @@ h1 {
     text-align: center;
 }
  th {
-     background-color: #4CAF50;
+     background-color: white;
      color: white;
  }
  table  {
@@ -11,13 +11,13 @@ h1 {
 
 
  tr:nth-child(even) {
-     background-color: darkgoldenrod;
+     background-color: white;
  }
  tfoot td {
      border-top: 1px solid ghostwhite;
  }
 tfoot {
-    background-color: lightgoldenrodyellow;
+    background-color: white;
 }
 button{
     width: 25px;
