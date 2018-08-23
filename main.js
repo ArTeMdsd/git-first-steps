@@ -56,8 +56,6 @@ for (let i = 0; i < numButtons.length; i++) {
 }
 const dotButton = numj
 dotButton.onclick = () => {enterNamber('+')}
-
-
 // DOM - Document Object Model
 // BOM - Browser Object Model
 const dotbaton = document.getElementById('nam-baton');
