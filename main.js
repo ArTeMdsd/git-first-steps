@@ -10,19 +10,21 @@ backspaceButton.onclick = () => {
 };
 let num = null
 let op = null
+let p = false
+let lop = null
 const input = document.getElementById('num-input');
 
 const numg = document.getElementById('numg');
 numg.onclick = () => {
-    enterNamber('+')
+    dispatchOperation('+')
 };
 const numh = document.getElementById('numh');
 numh.onclick = () => {
-    enterNamber('*')
+    dispatchOperation('*')
 };
 const numn = document.getElementById('numn');
 numn.onclick = () => {
-    enterNamber('-')
+    dispatchOperation('-')
 };
 const numj = document.getElementById('numj');
 numj.onclick = () => {
@@ -30,21 +32,7 @@ numj.onclick = () => {
 };
 const numk = document.getElementById('numk');
 numk.onclick = () => {
-    enterNamber('/')
-};
-enterNamber = (n) => {
-    if (n == '+') {
-        if (num == null) {
-            op = '+'
-            console.log('+')
-        }
-        return
-    }
-    if (input.value === '0') {
-        input.value = n;
-    } else {
-        input.value = input.value + n;
-    }
+    dispatchOperation('/')
 };
 const numButtons = document.getElementsByClassName('nam-baton');
 for (let i = 0; i < numButtons.length; i++) {
@@ -54,9 +42,58 @@ for (let i = 0; i < numButtons.length; i++) {
         enterNamber(num)
     }
 }
-const dotButton = numj
-dotButton.onclick = () => {enterNamber('+')}
+
+const enterNamber = (n) => {
+    if (input.value === '0') {
+        input.value = n;
+    } else {
+        if (p) {
+            num = parseFloat(input.value);
+            input.value = n;
+            p = false
+        } else {
+            input.value = input.value + n;
+        }
+    }
+};
+const dispatchOperation = (operation) => {
+    if (lop) {
+        if (!p){
+        num = processOperation(lop, num, parseFloat(input.value));
+        input.value = num;
+        }
+    }
+
+    p = true;
+    lop = operation;
+};
+const processOperation = (operation, argument1, argument2) => {
+    switch (operation) {
+        case'+':
+            return argument1 + argument2;
+        case '-':
+            return argument1 - argument2;
+        case '*':
+            return argument1 * argument2;
+        case '/':
+            return argument1 / argument2;
+    }
+};
+
 // DOM - Document Object Model
 // BOM - Browser Object Model
-const dotbaton = document.getElementById('nam-baton');
-d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
