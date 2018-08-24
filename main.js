@@ -78,7 +78,7 @@ const processOperation = (operation, argument1, argument2) => {
         case '/':
             return argument1 / argument2;
     }
-};
+};v
 
 // DOM - Document Object Model
 // BOM - Browser Object Model
